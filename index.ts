@@ -1,4 +1,5 @@
 const readline = require("readline");
+import TicTacToe from "./tictactoe";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -21,6 +22,7 @@ function printBoard(): void {
   console.log("\nCurrent player:", game.currentPlayer);
 }
 // Prompt the current player for a move
+
 function promptPlayer(): void {
   rl.question("Enter a number (0-8): ", (input) => {
     const position = parseInt(input);
